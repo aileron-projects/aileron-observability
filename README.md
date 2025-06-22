@@ -30,3 +30,53 @@ Use go command to use from your project.
 go get github.com/aileron-projects/aileron-observability@latest
 go mod tidy
 ```
+
+## Tested Environment
+
+Operating System:
+
+- `Linux`: [ubuntu-latest](https://github.com/actions/runner-images)
+- `Windows`: [windows-latest](https://github.com/actions/runner-images)
+- `macOS`: [macos-latest](https://github.com/actions/runner-images)
+
+Go:
+
+- Current Stable: `go 1.(N).x`
+- Previous Stable: `go 1.(N-1).x`
+- Minimum Requirement: `go 1.(N-2).0`
+  - Declared in the [go.mod](go.mod)
+
+Where `N` is the current latest minor version.
+See the Go official release page [Stable versions](https://go.dev/dl/).
+
+In addition to the environment above, following platforms are tested on ubuntu
+using [QEMU User space emulator](https://www.qemu.org/docs/master/user/main.html).
+
+- `amd64`
+- `arm/v5`
+- `arm/v6`
+- `arm/v7`
+- `arm64`
+- `ppc64`
+- `ppc64le`
+- `riscv64`
+- `s390x`
+- `loong64`
+- `386`
+- `mips`
+- `mips64`
+- `mips64le`
+- `mipsle`
+
+## Release Cycle
+
+- Releases are made as needed.
+- Versions follow [Semantic Versioning](https://semver.org/).
+  - `vX.Y.Z`
+  - `vX.Y.Z-rc.N`
+  - `vX.Y.Z-beta.N`
+  - `vX.Y.Z-alpha.N`
+
+## License
+
+Apache 2.0

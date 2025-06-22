@@ -1,0 +1,19 @@
+# docker-compose.yaml
+services:
+  collector:
+    image: otel/opentelemetry-collector:0.127.0
+    command:
+      - "--config=/etc/opentelemetry.yaml"
+    ports:
+      - "8889:8889" # Prometheus metrics
+      - "4317:4317" # OTLP gRPC receiver
+    volumes:
+      - ./opentelemetry.yaml:/etc/opentelemetry.yaml
+  prometheus:
+    image: prom/prometheus:v3.4.1
+    ports:
+      - "9090:9090"
+    command:
+      - "--config.file=/etc/prometheus.yaml"
+    volumes:
+      - ./prometheus.yaml:/etc/prometheus.yaml

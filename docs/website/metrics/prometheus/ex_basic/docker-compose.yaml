@@ -1,0 +1,11 @@
+# docker-compose.yaml
+services:
+  prometheus:
+    image: prom/prometheus:v3.4.1
+    network_mode: host
+    ports:
+      - "9090:9090"
+    command:
+      - "--config.file=/etc/prometheus.yaml"
+    volumes:
+      - ./prometheus.yaml:/etc/prometheus.yaml

@@ -1,0 +1,17 @@
+# Ignore files.
+*.mk
+*.env
+*.test
+*.tmp
+*.temp
+
+# Ignore directory.
+_output/**
+bin/
+tmp/
+temp/
+work/
+study/
+local/
+.vscode/
+.idea/

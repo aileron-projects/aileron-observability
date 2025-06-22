@@ -1,6 +1,6 @@
 ---
-title: "OpenTelemetry"
-linkTitle: "OpenTelemetry"
+title: "OTel メトリクス"
+linkTitle: "OTel メトリクス"
 type: docs
 weight: 1
 categories: []

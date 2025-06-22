@@ -1,6 +1,6 @@
 ---
-title: "OpenTelemetry"
-linkTitle: "OpenTelemetry"
+title: "OTel Metrics"
+linkTitle: "OTel Metrics"
 type: docs
 weight: 1
 categories: []
